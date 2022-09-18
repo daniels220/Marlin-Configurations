@@ -669,9 +669,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  20.80
-    #define DEFAULT_Ki   1.42
-    #define DEFAULT_Kd  76.10
+    #define DEFAULT_Kp  18.00
+    #define DEFAULT_Ki   1.15
+    #define DEFAULT_Kd  69.90
   #endif
 #endif
 
@@ -1170,14 +1170,14 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 97.5 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 97.7 }
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
  * Override with M203
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 1000, 1000, 25, 25 }
+#define DEFAULT_MAX_FEEDRATE          { 1000, 1000, 40, 25 }
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
